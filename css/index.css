@@ -1,0 +1,87 @@
+.jumbotron {
+  background-color:lightgrey;
+  background-image: url('../img/student/students.jpg');
+
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: top;
+  min-height: 50vh;
+
+}
+
+#indexHeader, #indexP {
+  color: white;
+}
+
+#indexHeader {
+  font-size: 60px;
+}
+
+#indexP {
+  font-size: 30px;
+}
+
+.studentImage{
+  width: 200px;
+  border-radius: 50%
+}
+
+.article:hover{
+  transform: scale(1.2);
+}
+.article a{
+  text-decoration: none;
+  color:black;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('../img/student/parallax.jpg');
+
+  /* Full height */
+  height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footerListDiv{
+  background-color: #F76262;
+  border-top:2px solid black;
+}
+
+#footerList{
+  list-style: none;
+  text-decoration: none;
+  font-size: 11px;
+  color: black;
+  padding: 10px 0;
+  flex-wrap: wrap;
+
+}
+#footerList li{
+  display: inline-block;
+  padding: 10px 0 0 0;
+
+}
+
+#footerList li:hover{
+
+  color: white;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+hr{
+  display:none;
+}
+  .reviewDiv{
+    display: none;
+  }
+
+}

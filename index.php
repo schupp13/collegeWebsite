@@ -16,53 +16,96 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="display/css/review.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 </head>
-
+<header>
 <body>
-  <nav class="navbar navbar-expand-sm  navbar-light">
-    <ul class="navbar-nav nav-justified w-100">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Academics</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Admissions</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Student Life</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Research</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Athletics</a>
-      </li>
-      <li class="nav-item signUpButton">
-        <a class="nav-link btn btn-info" href="navPages/userRegister.php">Sign Up</a>
-      </li>
-      <li class="nav-item loginButton">
-        <a class="nav-link btn btn-info" data-toggle="modal" data-target="#myModal">Login</a>
-      </li>
+  <div class="desktopNavDiv">
+    <? include 'display/desktopNav.php' ?>
+  </div>
+  </header>
 
-    </ul>
-  </nav>
-  <header>
     <div class="jumbotron jumbotron-fluid" id="indexHeader">
       <div class="container text-center">
         <h1 id="indexHeader">Pseudo University</h1>
         <p id="indexP">Home of the Knights</p>
       </div>
     </div>
-  </header>
+
+  <section>
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-4 text-center article article1"><a href="index.php">
+          <img src="img/student/student1.jpg" class="studentImage" alt="">
+          <h4>First Time in College</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></a>
+        </div>
+        <div class="col-lg-4 text-center article"><a href='index.php'>
+          <img src="img/student/student2.jpg" class="studentImage" alt="">
+          <h4>Transfer Services</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></a>
+        </div>
+        <div class="col-lg-4 text-center article "><a href="index.php">
+          <img src="img/student/student3.jpg" class="studentImage" alt="">
+          <h4>Visit Pseudo University</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+    <div class="container-fluid">
+      <div class="parallax">
+      </div>
+    </div>
+    <hr>
+    <br>
+    <div class="reviewDiv">
+      <?include 'display/reviews.php'?>
+    </div>
+  <br>
   <div>
-    <?php include 'process/loginModal.php'; ?>
+    <?php include 'display/loginModal.php'; ?>
   </div>
+  <hr>
+  <br>
+  <br>
+  <footer>
+    <div class="container ">
+    <div class="row">
+      <div class="col-sm-6 text-center">
+          <h5>Contact us</h5>
+          <p>Phone: 555-5555-555</p>
+          <p>Email: support@PseudoUniversity.com</p>
+          <p>twitter: @supportpseudoUniversity</p>
+      </div>
+      <div class="col-sm-6 text-center" >
+          <img width="60%" src="img/horse.png" alt="">
+      </div>
+
+    </div>
+  </div>
+  <div class="container-fluid footerListDiv">
+    <div class="row">
+      <div class="col-sm-12">
+        <ul class="d-flex justify-content-around " id="footerList">
+          <li>&copy; PseudoUniversity 2019</li>
+          <li>Admissions</li>
+          <li>Athletics</li>
+          <li>Academics</li>
+          <li>Research</li>
+          <li>Alumni</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ </footer>
+
 </body>
 
 </html>

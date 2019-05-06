@@ -1,0 +1,29 @@
+
+body{
+  background: #65C0BA;
+}
+
+.jumbotron {
+  background-color: #F76262;
+  background-image: url('../../img/horse.png');
+  background-blend-mode: darken;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 15vh;
+  border-bottom: 2px solid black;
+}
+.dashHeader{
+  color:white;
+  padding:10px;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 0.5em;
+}
+
+.dashP{
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5em;
+}

@@ -1,0 +1,8 @@
+.jumbotron {
+  background-color:#216583;
+  background-image: url('../img/student/student2.jpg');
+  background-blend-mode:overlay;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+}
